@@ -6,16 +6,10 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 
 @SpringBootApplication
-public class NettyExampleApplication implements ApplicationListener<ApplicationReadyEvent> {
-
-    // private final NettyServerSocket nettyServerSocket;
+public class NettyExampleApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(NettyExampleApplication.class, args);
     }
 
-    @Override
-    public void onApplicationEvent(ApplicationReadyEvent event) {
-        // nettyServerSocket.start()
-    }
 }
